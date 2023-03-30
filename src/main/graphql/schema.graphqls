@@ -1,0 +1,21 @@
+type Query {
+    """
+    Returns application version.
+    """
+    appVersion: String!
+}
+
+type Subscription {
+    events(input: EventsInput!): Event!
+}
+
+type Event {
+    id: ID!
+    payload: String!
+}
+
+input EventsInput {
+    interval: Int! = 1000
+    limit: Int! = 0
+    payload: String!
+}
