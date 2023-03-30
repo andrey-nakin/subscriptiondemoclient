@@ -16,6 +16,9 @@ public class AppProperties {
     private String host;
 
     @NonNull
+    private Integer interval;
+
+    @NonNull
     private String payload;
 
     @NonNull

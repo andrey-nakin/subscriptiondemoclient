@@ -19,5 +19,8 @@ The application is intended to be used for test purposes.
 ## Usage
 
 ```shell
-docker run -p 8082:8082 docker.io/library/subscriptiondemoclient:0.0.1-SNAPSHOT --app.host=ws://localhost:8082/subscription
+docker run -p 8082:8082 docker.io/library/subscriptiondemoclient:0.0.1-SNAPSHOT \
+  --app.host=ws://localhost:8082/subscription \
+  --app.payload=sample-payload  \
+  --app.limit=10
 ```

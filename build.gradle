@@ -25,6 +25,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'com.apollographql.apollo3:apollo-runtime:3.7.5'
+    implementation 'com.apollographql.apollo3:apollo-rx3-support:3.7.5'
+//    implementation 'io.projectreactor:reactor-core:3.5.4'
 }
 
 tasks.named('test') {

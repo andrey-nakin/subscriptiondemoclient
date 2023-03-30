@@ -1,4 +1,5 @@
 app:
   host: ws://localhost:8082/subscription
-  limit: 10
+  interval: 1000
   payload: "sample-payload"
+  limit: 10

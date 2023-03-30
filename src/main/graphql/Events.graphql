@@ -1,0 +1,12 @@
+subscription Events($interval: Int!, $payload: String!, $limit: Int!) {
+    event: events(
+        input: {
+            interval: $interval,
+            payload: $payload,
+            limit: $limit
+        }
+    ) {
+        id
+        payload
+    }
+}
