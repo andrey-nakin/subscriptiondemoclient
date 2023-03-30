@@ -23,6 +23,7 @@ public class SubscriptiondemoclientApplication implements CommandLineRunner {
 
     @Override
     public void run(final String... args) {
+        log.info("Started");
         log.info("Target host: {}", properties.getHost());
         log.info("Event payload: {}", properties.getPayload());
         log.info("Event limit: {}", properties.getLimit());
@@ -43,6 +44,8 @@ public class SubscriptiondemoclientApplication implements CommandLineRunner {
                 }
             });
         }
+
+        log.info("Finished");
     }
 
     public static void main(String[] args) {
